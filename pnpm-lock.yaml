@@ -160,6 +160,9 @@ dependencies:
     version: 3.24.3
 
 devDependencies:
+  '@netlify/plugin-nextjs':
+    specifier: ^5.10.7
+    version: 5.10.7
   '@types/node':
     specifier: ^22
     version: 22.15.3
@@ -461,6 +464,11 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  /@netlify/plugin-nextjs@5.10.7:
+    resolution: {integrity: sha512-UZ0D6MKMV+7toNTeiki96YDcxwR/2lddW9zJQh4n62o564S/D2r5w46UTE0DcCY7Jtw7WGVOy1VtB3ws2gKW0A==}
+    engines: {node: '>=18.0.0'}
+    dev: true
 
   /@next/env@15.2.4:
     resolution: {integrity: sha512-+SFtMgoiYP3WoSswuNmxJOCwi06TdWE733D+WPjpXIe4LXGULwEaofiiAy6kbS0+XjM5xF5n3lKuBwN2SnqD9g==}
