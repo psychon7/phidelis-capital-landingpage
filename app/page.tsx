@@ -60,7 +60,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 z-0">
           <ParallaxImage
-            src="/images/singapore-skyline.jpg"
+            src="/images/goldenratio.jpg"
             alt="Singapore Skyline"
             overlayColor="bg-[#24346d]/70"
             speed={-20}
@@ -72,7 +72,7 @@ export default function Home() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
               <SplitText
                 text="Bespoke Wealth Solutions with Ethics at the Core"
-                className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6"
+                className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6 space-x-2 md:space-x-4"
                 delay={0.8}
               />
             </motion.div>

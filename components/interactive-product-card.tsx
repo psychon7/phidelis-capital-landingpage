@@ -80,7 +80,7 @@ export function InteractiveProductCard({
       </div>
 
       <Link
-        href="#"
+        href="#contact"
         className="relative z-10 mt-auto flex w-fit items-center text-sm font-medium text-white group-hover:text-white/90"
       >
         <span>Learn more</span>

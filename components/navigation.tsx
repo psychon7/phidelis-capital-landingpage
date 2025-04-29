@@ -11,17 +11,7 @@ interface NavigationProps {
 }
 
 export function Navigation({ activeSection }: NavigationProps) {
-  const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -39,8 +29,7 @@ export function Navigation({ activeSection }: NavigationProps) {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 w-full z-50 transition-all duration-500",
-          isScrolled ? "bg-white/95 backdrop-blur-sm py-4 shadow-sm" : "bg-transparent py-6",
+          "fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white py-6 shadow-sm",
         )}
       >
         <div className="container px-4 md:px-6 flex items-center justify-between">
@@ -52,7 +41,7 @@ export function Navigation({ activeSection }: NavigationProps) {
               height={50}
               className={cn(
                 "h-10 w-auto transition-all duration-300",
-                !isScrolled && !isMenuOpen ? "brightness-0 invert" : "",
+                isMenuOpen ? "" : "",
               )}
             />
           </Link>
@@ -63,14 +52,8 @@ export function Navigation({ activeSection }: NavigationProps) {
                 key={item}
                 href={`#${item}`}
                 className={cn(
-                  "text-sm font-medium capitalize transition-colors relative",
-                  isScrolled
-                    ? activeSection === item
-                      ? "text-[#4290cb]"
-                      : "text-[#24346d] hover:text-[#4290cb]"
-                    : activeSection === item
-                      ? "text-[#4290cb]"
-                      : "text-white hover:text-[#4290cb]",
+                  "text-sm font-medium capitalize transition-colors relative text-[#24346d] hover:text-[#4290cb]",
+                  activeSection === item ? "text-[#4290cb]" : "",
                 )}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -87,10 +70,7 @@ export function Navigation({ activeSection }: NavigationProps) {
           <div className="hidden lg:block">
             <Link
               href="#contact"
-              className={cn(
-                "px-8 py-3 rounded-full text-sm font-medium transition-all",
-                isScrolled ? "bg-[#24346d] text-white hover:bg-[#1c2a58]" : "bg-white text-[#24346d] hover:bg-white/90",
-              )}
+              className="px-8 py-3 rounded-full text-sm font-medium transition-all bg-[#24346d] text-white hover:bg-[#1c2a58]"
             >
               Schedule a Consultation
             </Link>
@@ -106,22 +86,19 @@ export function Navigation({ activeSection }: NavigationProps) {
             >
               <span
                 className={cn(
-                  "h-0.5 bg-current block transition-all duration-300",
-                  isScrolled ? "bg-[#24346d]" : "bg-white",
+                  "h-0.5 bg-current block transition-all duration-300 bg-[#24346d]",
                   isMenuOpen ? "w-6 translate-y-0.5 rotate-45" : "w-6",
                 )}
               ></span>
               <span
                 className={cn(
-                  "h-0.5 bg-current block transition-all duration-300",
-                  isScrolled ? "bg-[#24346d]" : "bg-white",
+                  "h-0.5 bg-current block transition-all duration-300 bg-[#24346d]",
                   isMenuOpen ? "w-6 opacity-0" : "w-4",
                 )}
               ></span>
               <span
                 className={cn(
-                  "h-0.5 bg-current block transition-all duration-300",
-                  isScrolled ? "bg-[#24346d]" : "bg-white",
+                  "h-0.5 bg-current block transition-all duration-300 bg-[#24346d]",
                   isMenuOpen ? "w-6 -translate-y-0.5 -rotate-45" : "w-5",
                 )}
               ></span>
