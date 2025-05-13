@@ -8,7 +8,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Phidelis Capital | Bespoke Wealth Solutions",
   description: "An independent advisory firm and multi-family office from Singapore.",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  }
 }
 
 export default function RootLayout({
