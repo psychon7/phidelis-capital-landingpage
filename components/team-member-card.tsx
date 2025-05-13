@@ -24,7 +24,7 @@ export function TeamMemberCard({ name, role, bio, image, linkedIn, delay = 0 }: 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="h-[400px] w-full perspective-1000"
+      className="h-[450px] w-full perspective-1000"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
       onClick={() => setIsFlipped(!isFlipped)}
@@ -79,7 +79,7 @@ export function TeamMemberCard({ name, role, bio, image, linkedIn, delay = 0 }: 
             <div>
               <h3 className="mb-2 text-xl font-medium">{name}</h3>
               <p className="mb-4 text-sm text-white/80">{role}</p>
-              <p className="text-sm leading-relaxed text-white/90">{bio}</p>
+              <p className="text-sm leading-relaxed text-white/90 overflow-y-auto max-h-[250px] pr-1 custom-scrollbar">{bio}</p>
             </div>
             <div className="flex justify-end">
               <Link

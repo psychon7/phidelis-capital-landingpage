@@ -33,7 +33,7 @@ export function PhilosophyShowcase() {
 
   const philosophyItems: PhilosophyItem[] = [
     {
-      id: "nurturing",
+      id: "tailored-strategies",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 2L12 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -50,17 +50,17 @@ export function PhilosophyShowcase() {
           />
         </svg>
       ),
-      title: "Nurturing Your",
-      highlightedText: "Financial Growth",
+      title: "Tailor Made",
+      highlightedText: "Strategies",
       description:
-        "Just as a bonsai requires careful cultivation to thrive, your wealth needs expert guidance to flourish.",
+        "Every client's financial journey is unique, requiring personalized solutions that align with their specific needs and aspirations.",
       detailedDescription:
-        "Our approach combines time-tested strategies with innovative solutions to help your assets grow steadily and sustainably. We believe in the power of patient, disciplined investing - pruning when necessary, nurturing when beneficial, and always keeping the long-term vision in focus.",
+        "We craft bespoke financial strategies that reflect your individual circumstances, goals, and risk tolerance. Our personalized approach ensures that every recommendation is tailored to your unique situation, helping you navigate your financial journey with confidence.",
       color: "from-[#4290cb] to-[#5ba8e0]",
       background: "bg-gradient-to-br from-[#fafdff] to-[#edf6ff]",
     },
     {
-      id: "data-driven",
+      id: "investment-philosophy",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 3V21H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -74,17 +74,17 @@ export function PhilosophyShowcase() {
           <path d="M21 12V8H17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      title: "Data-Driven",
-      highlightedText: "Wealth Management",
+      title: "Investment Philosophy",
+      highlightedText: "Aligned With Goals",
       description:
-        "In today's complex financial landscape, success requires more than intuition - it demands precise analysis.",
+        "Our investment approach is built on the foundation of aligning strategic decisions with your long-term financial objectives.",
       detailedDescription:
-        "Our team combines cutting-edge analytics with deep market expertise to chart your optimal financial course. We transform complex market data into clear, actionable insights, helping you make informed decisions with confidence and clarity.",
+        "We develop investment strategies that directly support your financial goals, whether it's wealth preservation, growth, or income generation. Our philosophy combines proven investment principles with innovative approaches to create portfolios that reflect your aspirations.",
       color: "from-[#24346d] to-[#3a5ca3]",
       background: "bg-gradient-to-br from-[#f7f9ff] to-[#eef3ff]",
     },
     {
-      id: "building",
+      id: "risk-management",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 21H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -100,12 +100,38 @@ export function PhilosophyShowcase() {
           <path d="M9 18.5H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      title: "Building",
-      highlightedText: "Lasting Wealth",
+      title: "Risk Management",
+      highlightedText: "Principles",
       description:
-        "True wealth isn't just about accumulation - it's about creating lasting value that spans generations.",
+        "Effective risk management is fundamental to preserving and growing wealth in any market environment.",
       detailedDescription:
-        "Our comprehensive approach helps you build, protect, and transfer wealth while maintaining your core values and vision. From strategic asset allocation to legacy planning, we help you turn your financial goals into enduring realities.",
+        "Our risk management framework integrates sophisticated analysis with practical safeguards to protect and grow your wealth. We identify, assess, and mitigate risks across your portfolio, ensuring a balanced approach to achieving your financial objectives.",
+      color: "from-[#5580e1] to-[#8aa7ea]",
+      background: "bg-gradient-to-br from-[#f9fafe] to-[#f0f5ff]",
+    },
+    {
+      id: "financial-planning",
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 21H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path
+            d="M5 21V7L12 3L19 7V21"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path d="M9 10.5H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M9 14.5H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M9 18.5H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      ),
+      title: "Financial Planning",
+      highlightedText: "Process",
+      description:
+        "A structured and comprehensive financial planning process is key to achieving your long-term financial goals.",
+      detailedDescription:
+        "Our systematic approach to financial planning encompasses all aspects of your financial life. From retirement planning to estate strategies, we create a comprehensive roadmap that evolves with your changing needs and circumstances.",
       color: "from-[#5580e1] to-[#8aa7ea]",
       background: "bg-gradient-to-br from-[#f9fafe] to-[#f0f5ff]",
     },
@@ -183,10 +209,10 @@ export function PhilosophyShowcase() {
             className="text-center mb-20"
           >
             <div className="inline-block mb-4 px-3 py-1 rounded-full bg-[#4290cb]/10 text-[#4290cb] text-sm font-medium">
-              Our Philosophy
+              Our Approach
             </div>
             <h2 className="text-4xl md:text-5xl font-light mb-8 leading-tight">
-              Principles That <span className="text-[#4290cb] font-normal">Guide Us</span>
+              <span className="text-[#428fcb] font-normal">Principles That <span className="text-[#24346d]">Guide</span> Us</span>
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto">
               We approach wealth management with a distinct philosophy centered on growth, data-driven strategies, and
@@ -258,13 +284,13 @@ export function PhilosophyShowcase() {
 
                       <div className="flex-1">
                         <h3 className="text-2xl md:text-3xl font-light mb-2">
-                          {item.title}{" "}
+                          <span className="text-[#428fcb]">{item.title}</span>{" "}
                           <motion.span
                             className={cn(
                               "font-normal relative inline-block",
                               hoveredItem === item.id || activeItem === item.id
                                 ? `bg-gradient-to-r ${item.color} bg-clip-text text-transparent`
-                                : "text-[#4290cb]",
+                                : "text-[#24346d]",
                             )}
                           >
                             {item.highlightedText}

@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ScrollIndicator } from "@/components/scroll-indicator"
 import { SplitText } from "@/components/split-text"
-import { ParallaxImage } from "@/components/parallax-image"
+import { AnimatedGradientBackground } from "@/components/animated-gradient-background"
 import { ServiceCard } from "@/components/service-card"
 import { InteractiveProductCard } from "@/components/interactive-product-card"
 import { ContactForm } from "@/components/contact-form"
@@ -59,12 +59,7 @@ export default function Home() {
         style={{ opacity: heroOpacity, scale: heroScale, y: heroY }}
       >
         <div className="absolute inset-0 z-0">
-          <ParallaxImage
-            src="/images/goldenratio.jpg"
-            alt="Singapore Skyline"
-            overlayColor="bg-[#24346d]/70"
-            speed={-20}
-          />
+          <AnimatedGradientBackground overlayColor="bg-[#24346d]/30" />
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
@@ -83,7 +78,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 1.2 }}
               className="text-xl md:text-2xl font-light mb-12 text-white/80"
             >
-              An independent advisory firm and multi-family office from Singapore.
+              An independent advisory firm and multi-family office from Singapore, leveraging experience and expertise to deliver bespoke solutions.
             </motion.p>
 
             <motion.div
@@ -119,18 +114,21 @@ export default function Home() {
               <div className="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-[#24346d]/5 blur-3xl"></div>
 
               <div className="relative z-10 p-10">
-                <div className="text-[#4290cb] text-sm tracking-widest uppercase mb-4 font-medium">Our Philosophy</div>
+                {/* <div className="text-[#4290cb] text-sm tracking-widest uppercase mb-4 font-medium">Our Philosophy</div> */}
                 <h2 className="text-4xl md:text-5xl font-light mb-8 leading-tight">
-                  Welcome to <span className="text-[#4290cb] font-normal">Phidelis Capital</span>
+                  Welcome to <span className="font-normal"><span className="text-[#428fcb]">Phidelis</span> <span className="text-[#24346d]">Capital</span></span>
                 </h2>
                 <p className="text-lg text-slate-700 mb-6 leading-relaxed">
                   Phidelis Capital has been conceived to deliver high quality, objective & ethical asset management
                   solutions & advice.
                 </p>
-                <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+                <p className="text-lg text-slate-700 mb-6 leading-relaxed">
                   An amalgam of Fidelis, the Latin word for faith & loyalty; and Phi, the Greek symbol that
                   mathematically represents the golden ratio of harmonious proportions, 'Phidelis' blends together these
                   core values in its fundamental essence.
+                </p>
+                <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+                  Our mission is governed by the highest, unwavering standards of ethics, honesty & good faith.
                 </p>
 
                 <div className="inline-flex items-center group">
@@ -149,22 +147,29 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="grid grid-cols-2 gap-8">
+              <div className="flex flex-col gap-8">
                 <div className="bg-white rounded-lg shadow-xl p-8">
-                  <div className="text-4xl font-light text-[#4290cb] mb-4">25+</div>
-                  <div className="text-lg text-slate-600">Years of Experience</div>
+                  <h3 className="text-2xl font-light text-[#24346d] mb-4">Our Vision</h3>
+                  <p className="text-lg text-slate-700 leading-relaxed">
+                    We endeavour to intently focus, understand, craft and deliver superior solutions for a range of client situations across the entire spectrum of wealth & asset management.
+                  </p>
                 </div>
+                
                 <div className="bg-white rounded-lg shadow-xl p-8">
-                  <div className="text-4xl font-light text-[#4290cb] mb-4">500+</div>
-                  <div className="text-lg text-slate-600">Satisfied Clients</div>
+                  <h3 className="text-2xl font-light text-[#24346d] mb-4">Our History</h3>
+                  <p className="text-lg text-slate-700 leading-relaxed">
+                    Phidelis has been born out of a strong desire to craft superior, ethical solutions to help address & optimize various wealth management needs of clients.
+                  </p>
+                  <p className="text-lg text-slate-700 leading-relaxed mt-4">
+                    The firm's founders and partners have had decades of experience working in global banks, and endeavour to holistically serve clients through differentiated values, and an architecture that's better aligned to their goals.
+                  </p>
                 </div>
+                
                 <div className="bg-white rounded-lg shadow-xl p-8">
-                  <div className="text-4xl font-light text-[#4290cb] mb-4">$5B+</div>
-                  <div className="text-lg text-slate-600">Assets Managed</div>
-                </div>
-                <div className="bg-white rounded-lg shadow-xl p-8">
-                  <div className="text-4xl font-light text-[#4290cb] mb-4">100%</div>
-                  <div className="text-lg text-slate-600">Client Satisfaction</div>
+                  <h3 className="text-2xl font-light text-[#24346d] mb-4">Core Values</h3>
+                  <p className="text-lg text-slate-700 leading-relaxed">
+                    Integrity, care, competence & diligence are the cornerstones of our franchise.
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -188,7 +193,7 @@ export default function Home() {
           >
             <div className="text-[#4290cb] text-sm tracking-widest uppercase mb-4 font-medium">What We Offer</div>
             <h2 className="text-4xl md:text-5xl font-light mb-8 leading-tight">
-              Our <span className="text-[#4290cb] font-normal">Services</span>
+              <span className="font-normal"><span className="text-[#428fcb]">Our</span> <span className="text-[#24346d]">Services</span></span>
             </h2>
             <p className="text-lg text-slate-700">
               Comprehensive financial solutions tailored to your unique needs and aspirations.
@@ -272,7 +277,7 @@ export default function Home() {
           >
             <div className="text-[#4290cb] text-sm tracking-widest uppercase mb-4 font-medium">Our Solutions</div>
             <h2 className="text-4xl md:text-5xl font-light mb-8 leading-tight">
-              Financial <span className="text-[#4290cb] font-normal">Products</span>
+              <span className="font-normal"><span className="text-[#428fcb]">Financial</span> <span className="text-[#24346d]">Products</span></span>
             </h2>
             <p className="text-lg text-slate-700">
               Comprehensive financial solutions designed to secure and enhance your wealth.
@@ -308,8 +313,8 @@ export default function Home() {
             />
 
             <InteractiveProductCard
-              title="Wealth Management"
-              description="Strategic wealth management solutions for multi-generational success"
+              title="Specialized financial solutions"
+              description="Tailored financial strategies and niche offerings for unique client needs"
               icon={<Briefcase className="h-8 w-8" />}
               color="bg-gradient-to-br from-[#24346d] to-[#3a5ca3]"
               hoverColor="bg-gradient-to-br from-[#1c2a58] to-[#2e4a8a]"
@@ -337,7 +342,7 @@ export default function Home() {
             >
               <div className="text-[#4290cb] text-sm tracking-widest uppercase mb-4 font-medium">Get In Touch</div>
               <h2 className="text-4xl md:text-5xl font-light mb-8 leading-tight">
-                Start Your <span className="text-[#4290cb] font-normal">Journey</span>
+                <span className="text-[#428fcb] font-normal">Start Your</span> <span className="text-[#24346d] font-normal">Journey</span>
               </h2>
               <p className="text-lg text-slate-700 mb-12 leading-relaxed">
                 We're here to answer your questions and provide the guidance you need to achieve your financial goals.

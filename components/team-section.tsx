@@ -6,32 +6,32 @@ import { TeamMemberCard } from "@/components/team-member-card"
 export function TeamSection() {
   const teamMembers = [
     {
-      name: "Sarah Chen",
+      name: "Anuj Grover",
       role: "Chief Executive Officer",
-      bio: "With over 20 years of experience in wealth management, Sarah leads our firm with a vision for ethical, client-centered financial services. Her expertise in strategic asset allocation has helped numerous high-net-worth families preserve and grow their wealth across generations.",
-      image: "/confident-leader.png",
-      linkedIn: "https://linkedin.com",
-    },
-    {
-      name: "Michael Wong",
-      role: "Chief Investment Officer",
-      bio: "Michael brings 15 years of investment banking experience to Phidelis Capital. His data-driven approach to portfolio management has consistently delivered above-market returns while maintaining a strong focus on risk management and capital preservation.",
+      bio: "A career wealth management practitioner with two decades of experience across banking, investment advisory, succession and legacy planning. Based in Singapore for about 10 years, Anuj has lived & worked in India, the Middle East & Hong Kong, covering clients across the global spectrum. He previously held client advisory & leadership roles with leading global financial institutions such as Citi, HSBC & UBS, with his last position as Managing Director at Swiss boutique Bank J. Safra Sarasin.",
       image: "/confident-banker.png",
-      linkedIn: "https://linkedin.com",
+      linkedIn: "https://www.linkedin.com/in/anuj-grover-b7b7a31/",
     },
     {
-      name: "David Tan",
-      role: "Head of Wealth Planning",
-      bio: "David specializes in comprehensive wealth planning for ultra-high-net-worth individuals. His holistic approach integrates tax optimization, estate planning, and philanthropic strategies to create lasting financial legacies for our clients.",
-      image: "/confident-asian-advisor.png",
-      linkedIn: "https://linkedin.com",
+      name: "Prashant Shah",
+      role: "Chief Investment Officer",
+      bio: "A seasoned finance professional with over 25 years of experience across Consulting, Private Banking, Wealth & Asset Management. He has held leadership roles such as CEO, Fund Manager, and Executive Director at global financial institutions including UBS, J. Safra Sarasin, Standard Chartered, GE, Centrum, Enam & Matterhorn. His expertise spans investment advisory, business strategy, risk management, and regulatory compliance across jurisdictions.",
+      image: "/confident-banker.png",
+      linkedIn: "https://www.linkedin.com/in/prashant-shah-39904026/",
     },
     {
-      name: "Amelia Lim",
-      role: "Director of Client Relations",
-      bio: "Amelia ensures our clients receive exceptional service and personalized attention. Her background in private banking and deep understanding of client needs allows her to coordinate our team's expertise to deliver tailored financial solutions.",
+      name: "Patricia 'Pat' Lim",
+      role: "Head of Operations",
+      bio: "With over 35 years' experience in the finance industry, Pat began her banking career in Singapore as a client service associate in the early nineties and progressed to become a banker, advising clients in the pan Asian region. Having witnessed several financial crises, Pat is a strong advocate for providing the right advice to clients. She has held diverse banking roles at Citi, UBS, Deutsche Bank, DBS, J. Safra Sarasin, Commerzbank, and Standard Chartered.",
       image: "/confident-asian-professional.png",
-      linkedIn: "https://linkedin.com",
+      linkedIn: "https://www.linkedin.com/in/pat-l-8b9552a/",
+    },
+    {
+      name: "Sushruth Sunder, CFA",
+      role: "Investment Analyst",
+      bio: "With about a decade of experience in asset & wealth management, investment research, and financial media, Sushruth has honed deep expertise in securities research, market analysis, and data-driven investment strategies. Prior to his current role, he led equity research at fintech firm INDmoney, and contributed extensively as a Financial Journalist at the Financial Express publication.",
+      image: "/confident-asian-advisor.png",
+      linkedIn: "https://www.linkedin.com/in/sushruth-sunder-cfa-79481099/",
     },
   ]
 
@@ -50,7 +50,7 @@ export function TeamSection() {
         >
           <div className="mb-4 text-sm font-medium uppercase tracking-widest text-[#4290cb]">Our Experts</div>
           <h2 className="mb-8 text-4xl font-light leading-tight md:text-5xl">
-            Meet Our <span className="font-normal text-[#4290cb]">Team</span>
+            <span className="font-normal"><span className="text-[#428fcb]">Meet</span> <span className="text-[#24346d]">Our Team</span></span>
           </h2>
           <p className="text-lg text-slate-700">
             Our team of experienced professionals is dedicated to providing you with exceptional financial guidance and
