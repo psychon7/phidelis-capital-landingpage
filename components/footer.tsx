@@ -99,12 +99,14 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#4290cb] mt-0.5 mr-3" />
-                <span className="text-slate-600">
-                  12 Marina View
-                  <br />
-                  #11-29 Asia Square 2<br />
-                  Singapore 018961
-                </span>
+                <a
+                  href="https://maps.app.goo.gl/o9nYnxCs8CVQWXcu9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-[#4290cb] transition-colors"
+                >
+                  12 Marina View, #11-29 Asia Square 2, Singapore 018961
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#4290cb] mr-3" />
@@ -112,7 +114,12 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#4290cb] mr-3" />
-                <span className="text-slate-600">info@phideliscapital.com</span>
+                <a
+  href="mailto:info@phideliscapital.com"
+  className="text-slate-600 hover:text-[#4290cb] transition-colors"
+>
+  info@phideliscapital.com
+</a>
               </li>
             </ul>
           </div>

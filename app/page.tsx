@@ -148,14 +148,14 @@ export default function Home() {
               className="relative"
             >
               <div className="flex flex-col gap-8">
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8" style={{ boxShadow: '0 0 25px rgba(66, 143, 203, 0.15)' }}>
                   <h3 className="text-2xl font-light text-[#24346d] mb-4">Our Vision</h3>
                   <p className="text-lg text-slate-700 leading-relaxed">
                     We endeavour to intently focus, understand, craft and deliver superior solutions for a range of client situations across the entire spectrum of wealth & asset management.
                   </p>
                 </div>
                 
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8" style={{ boxShadow: '0 0 25px rgba(66, 143, 203, 0.15)' }}>
                   <h3 className="text-2xl font-light text-[#24346d] mb-4">Our History</h3>
                   <p className="text-lg text-slate-700 leading-relaxed">
                     Phidelis has been born out of a strong desire to craft superior, ethical solutions to help address & optimize various wealth management needs of clients.
@@ -165,7 +165,7 @@ export default function Home() {
                   </p>
                 </div>
                 
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8" style={{ boxShadow: '0 0 25px rgba(66, 143, 203, 0.15)' }}>
                   <h3 className="text-2xl font-light text-[#24346d] mb-4">Core Values</h3>
                   <p className="text-lg text-slate-700 leading-relaxed">
                     Integrity, care, competence & diligence are the cornerstones of our franchise.
@@ -355,7 +355,16 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-[#24346d] mb-2">Visit Our Office</h4>
-                    <p className="text-slate-600">12 Marina View, #11-29 Asia Square 2, Singapore 018961</p>
+                    <p className="text-slate-600">
+                      <a
+                        href="https://maps.app.goo.gl/o9nYnxCs8CVQWXcu9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-600 hover:text-[#4290cb] transition-colors"
+                      >
+                        12 Marina View, #11-29 Asia Square 2, Singapore 018961
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -375,7 +384,14 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-[#24346d] mb-2">Email Us</h4>
-                    <p className="text-slate-600">info@phideliscapital.com</p>
+                    <p className="text-slate-600">
+                      <a
+                        href="mailto:info@phideliscapital.com"
+                        className="text-slate-600 hover:text-[#4290cb] transition-colors"
+                      >
+                        info@phideliscapital.com
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -12,12 +12,18 @@ export function AnimatedGradientBackground({
 }: AnimatedGradientBackgroundProps) {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      <div className="absolute inset-0" style={{ 
-        backgroundImage: `url('/phidelis gradient.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }} />
+      <div className="absolute inset-0 w-full h-full">
+        <div 
+          className="relative w-full h-full" 
+          style={{
+            backgroundImage: `url('/phidelis gradient.png')`,
+            backgroundSize: '100% 100%',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            transform: 'scale(1.1)', // Prevent edge gaps during scroll
+          }}
+        />
+      </div>
       <div className={cn("absolute inset-0", overlayColor)}></div>
     </div>
   )
